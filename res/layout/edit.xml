@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:padding="3dp" 
+    android:scrollbars="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" >
+        
+        <LinearLayout 
+        	android:orientation="horizontal" 
+        	android:layout_width="match_parent" 
+        	android:layout_height="wrap_content" >
+        
+            <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:id="@+id/l_no" 
+                android:layout_width="80dp" 
+                android:layout_height="35dp" 
+                android:background="@drawable/bred"
+                android:text="@string/nomor" 
+                style="@style/Text1" />
+            
+            <EditText 
+                android:id="@+id/t_no" 
+                android:paddingLeft="3dp"
+                android:gravity="center_vertical"
+                android:layout_width="80dp" 
+                android:layout_height="35dp"
+                android:inputType="text"
+                android:background="@drawable/bgreen" 
+                android:textSize="12sp"
+                style="@style/EditText1" />
+            
+    	</LinearLayout>
+        
+        <LinearLayout 
+        	android:orientation="horizontal" 
+        	android:layout_width="match_parent" 
+        	android:layout_height="wrap_content" >
+        
+            <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:id="@+id/l_noang"
+                android:layout_width="80dp"  
+                android:layout_height="35dp" 
+                android:text="@string/no_ang" 
+                android:background="@drawable/bred"
+                style="@style/Text1" />
+            
+            <EditText 
+                android:id="@+id/t_noang" 
+                android:paddingLeft="3dp"
+                android:layout_width="80dp" 
+                android:layout_height="35dp" 
+                android:textSize="12sp"
+                android:inputType="text"
+                android:background="@drawable/bgreen"
+                style="@style/EditText1" />
+            
+    	</LinearLayout>
+
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            
+            <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:id="@+id/l_nama"
+                android:layout_width="80dp" 
+                android:layout_height="35dp" 
+                android:text="@string/nama" 
+                android:background="@drawable/bred"
+                style="@style/Text1" />
+            
+            <EditText 
+                android:id="@+id/t_nama" 
+                android:paddingLeft="3dp"
+                android:layout_width="220dp" 
+                android:textSize="12sp"
+                android:layout_height="35dp"
+                android:inputType="textNoSuggestions" 
+                android:background="@drawable/bgreen"
+                style="@style/EditText1" />
+            
+        </LinearLayout>        
+
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            
+            <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:id="@+id/l_alamat" 
+                android:layout_width="80dp" 
+                android:layout_height="35dp" 
+                android:text="@string/alamat" 
+                android:background="@drawable/bred"
+                style="@style/Text1" />
+            
+            <EditText 
+                android:id="@+id/t_alamat" 
+                android:paddingLeft="3dp"
+                android:layout_width="300dp" 
+                android:layout_height="35dp" 
+                android:textSize="12sp"
+                android:inputType="textNoSuggestions"
+                android:background="@drawable/bgreen"
+                style="@style/EditText1" />
+            
+        </LinearLayout>        
+
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            
+            <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:id="@+id/l_gender"
+                android:layout_width="80dp"  
+                android:layout_height="35dp" 
+                android:text="@string/gender" 
+                android:background="@drawable/bred"
+                style="@style/Text1" />
+            
+            <Spinner 
+                android:id="@+id/t_gender" 
+                android:layout_width="60dp" 
+                android:layout_height="35dp" 
+                android:spinnerMode="dropdown" />        
+
+        </LinearLayout>
+                    
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            
+        <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:layout_width="80dp"  
+                android:layout_height="35dp" 
+                android:text="@string/tgl" 
+                android:background="@drawable/bred"
+                style="@style/Text1" />
+            
+        <Spinner
+                android:id="@+id/i_tanggal" 
+                android:layout_width="70dp" 
+           		android:layout_height="35dp"
+           		android:paddingBottom="3dp"
+		   		android:layout_marginBottom="5dp"
+           		android:spinnerMode="dropdown" />
+            
+            <ImageView 
+                android:layout_width="20dp" 
+                android:layout_height="20dp" 
+                android:layout_gravity="center_vertical" 
+                android:src="@drawable/tg" 
+                android:contentDescription="@string/kosong" />
+            
+            <Spinner 
+                android:id="@+id/i_bulan" 
+				android:layout_width="70dp" 
+           		android:layout_height="35dp"
+           		android:paddingBottom="3dp"
+		   		android:layout_marginBottom="5dp"
+           		android:spinnerMode="dropdown" />
+            
+            <ImageView 
+                android:layout_width="20dp" 
+                android:layout_height="20dp"                
+                android:layout_gravity="center_vertical" 
+                android:src="@drawable/tg" 
+                android:contentDescription="@string/kosong" />
+            
+            <Spinner 
+                android:id="@+id/i_tahun" 
+                android:layout_height="35dp"
+           		android:layout_width="130dp" 
+           		android:paddingBottom="3dp"
+           		android:layout_marginBottom="5dp"
+           		android:spinnerMode="dropdown" />  
+
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            
+            <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:id="@+id/l_phone"
+                android:layout_width="80dp"  
+                android:layout_height="35dp" 
+                android:text="@string/phone" 
+                android:background="@drawable/bred"
+                style="@style/Text1" />
+            
+            <EditText 
+                android:id="@+id/t_phone" 
+                android:paddingLeft="3dp"
+                android:layout_width="150dp" 
+                android:layout_height="35dp"
+                android:textSize="12sp" 
+                android:inputType="text"
+                android:background="@drawable/bgreen"
+                style="@style/EditText1" />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            
+            <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:id="@+id/l_bs" 
+                android:layout_width="80dp" 
+                android:layout_height="35dp" 
+                android:text="@string/bs" 
+                android:background="@drawable/bred"
+                style="@style/Text1" />
+            
+            <Spinner 
+                android:id="@+id/t_bs" 
+                android:layout_width="80dp" 
+                android:layout_height="35dp" 
+                android:spinnerMode="dropdown" />
+            
+        </LinearLayout>
+                
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            
+            <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:id="@+id/l_pendidikan"
+                android:layout_width="80dp"  
+                android:layout_height="35dp" 
+                android:text="@string/pendidikan" 
+                android:background="@drawable/bred"
+                style="@style/Text1" />
+            
+            <Spinner 
+                android:id="@+id/t_pendidikan" 
+                android:layout_width="150dp" 
+                android:layout_height="35dp" 
+                android:spinnerMode="dropdown" />
+            
+        </LinearLayout>
+                
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            
+            <TextView 
+                android:gravity="right|center_vertical" 
+                android:layout_gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:id="@+id/l_pekerjaan" 
+                android:layout_width="80dp" 
+                android:layout_height="35dp" 
+                android:text="@string/pekerjaan" 
+                android:background="@drawable/bred"
+                style="@style/Text1" />
+            
+            <Spinner 
+                android:id="@+id/t_pekerjaan" 
+                android:layout_width="150dp" 
+                android:layout_height="35dp" 
+                android:spinnerMode="dropdown" />
+            
+        </LinearLayout>        
+        
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+        
+        <Button 
+            android:textColor="#ff0000" 
+            android:id="@+id/b_ubah" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/ubah" />
+        
+        <ImageView 
+            android:id="@+id/i_back" 
+            android:layout_width="35dp" 
+            android:layout_height="35dp" 
+            android:layout_gravity="center_vertical" 
+            android:src="@drawable/back"
+			android:contentDescription="@string/kosong"/>        
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</ScrollView>

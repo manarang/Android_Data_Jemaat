@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:padding="3dp" 
+    android:scrollbars="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+        
+        <EditText 
+            android:id="@+id/i_no_anggota" 
+            android:paddingLeft="3dp"
+            android:layout_width="120dp" 
+            android:layout_height="35dp" 
+            android:hint="@string/no_ang" 
+            android:inputType="text"
+            android:background="@drawable/bred" 
+            style="@style/EditText1" />
+
+        <EditText 
+            android:id="@+id/i_nama" 
+            android:paddingLeft="3dp"
+            android:layout_width="290dp" 
+            android:layout_height="35dp" 
+            android:hint="@string/nama" 
+            android:inputType="text" 
+            android:background="@drawable/bgreen" 
+            style="@style/EditText1" />
+
+        <EditText 
+            android:id="@+id/i_alamat"
+            android:paddingLeft="3dp" 
+            android:layout_width="310dp" 
+            android:layout_height="35dp" 
+            android:hint="@string/alamat" 
+            android:inputType="text" 
+            android:background="@drawable/bgreen" 
+            style="@style/EditText1" />
+
+        <Spinner 
+            android:id="@+id/spinner1" 
+            android:layout_width="100dp" 
+            android:layout_height="35dp" 
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            
+            <TextView 
+                android:gravity="center_horizontal" 
+                android:layout_gravity="top" 
+                android:layout_width="280dp" 
+                android:layout_height="40dp" 
+                android:text="@string/lahir" 
+                android:textSize="25sp"
+                android:background="@drawable/bred"
+                android:textColor="#FF0000"
+                 />
+        </LinearLayout>    
+        
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content">
+            <Spinner 
+                android:id="@+id/i_tanggal"
+                android:layout_width="70dp" 
+           		android:layout_height="35dp"
+           		android:paddingBottom="3dp"
+		   		android:layout_marginBottom="5dp"
+           		android:spinnerMode="dropdown" />
+
+            <ImageView 
+                android:layout_width="20dp" 
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical" 
+                android:src="@drawable/tg"
+                android:contentDescription="@string/kosong"/>
+            
+            <Spinner
+                android:id="@+id/i_bulan"
+				android:layout_width="70dp" 
+           		android:layout_height="35dp"
+           		android:paddingBottom="3dp"
+		   		android:layout_marginBottom="5dp"
+           		android:spinnerMode="dropdown" />
+            
+            <ImageView 
+                android:layout_width="20dp" 
+                android:layout_height="20dp" 
+                android:layout_gravity="center_vertical" 
+                android:src="@drawable/tg"
+				android:contentDescription="@string/kosong"/>
+
+            <Spinner 
+                android:id="@+id/i_tahun"
+                android:layout_height="35dp"
+           		android:layout_width="130dp" 
+           		android:paddingBottom="3dp"
+           		android:layout_marginBottom="5dp"
+           		android:spinnerMode="dropdown" />  
+
+        </LinearLayout>
+
+        <EditText 
+            android:id="@+id/i_phone" 
+            android:paddingLeft="3dp"
+            android:layout_width="150dp" 
+            android:layout_height="35dp"
+            android:inputType="text|phone" 
+            android:hint="@string/phone" 
+            android:background="@drawable/bgreen"
+            style="@style/EditText1" />        
+
+        <Spinner 
+            android:id="@+id/i_bs" 
+            android:layout_width="70dp" 
+            android:layout_height="35dp" 
+            android:spinnerMode="dropdown" />
+
+        <Spinner 
+            android:id="@+id/i_pendidikan" 
+            android:layout_width="150dp" 
+            android:layout_height="35dp" 
+            android:spinnerMode="dropdown" />
+
+        <Spinner 
+            android:id="@+id/i_pekerjaan" 
+            android:layout_width="150dp" 
+            android:layout_height="35dp" 
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content">
+
+            <Button 
+                android:textColor="#ff0000" 
+                android:id="@+id/b_insert" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/simpan" />
+
+            <Button 
+                android:textColor="#0000ff" 
+                android:id="@+id/b_reset" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/reset" />
+
+            <ImageView 
+                android:id="@+id/i_back" 
+                android:layout_width="35dp" 
+                android:layout_height="35dp" 
+                android:layout_gravity="center_vertical" 
+                android:src="@drawable/back"
+				android:contentDescription="@string/kosong"/>
+            
+            
+            </LinearLayout>
+        
+    </LinearLayout>
+</ScrollView>

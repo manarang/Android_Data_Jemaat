@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:padding="3dp" 
+    android:scrollbars="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+      android:orientation="vertical" 
+      android:layout_width="match_parent" 
+      android:layout_height="wrap_content" >      
+      <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" >  	    
+
+        <Spinner 
+           android:id="@+id/tanggal" 
+           android:layout_width="65dp" 
+           android:layout_height="35dp"
+           android:paddingBottom="3dp"
+		   android:layout_marginBottom="5dp"
+           android:spinnerMode="dropdown" />  
+          
+        <Spinner 
+           android:id="@+id/bulan" 
+           android:layout_width="65dp" 
+           android:layout_height="35dp"
+           android:paddingBottom="3dp"
+		   android:layout_marginBottom="5dp"
+           android:spinnerMode="dropdown" />  
+                
+        <Spinner 
+           android:id="@+id/tahun" 
+           android:layout_height="35dp"
+           android:layout_width="110dp" 
+           android:paddingBottom="3dp"
+           android:layout_marginBottom="5dp"
+           android:spinnerMode="dropdown" />  
+           
+        <ImageView 
+           android:id="@+id/lihat" 
+           android:layout_width="35dp" 
+           android:layout_height="35dp"                
+           android:src="@drawable/eyes" 
+           android:contentDescription="@string/kosong" />
+        
+        <ImageView 
+            android:id="@+id/i_back" 
+            android:layout_width="35dp" 
+            android:layout_height="35dp" 
+            android:layout_gravity="center_vertical" 
+            android:src="@drawable/back"
+			android:contentDescription="@string/kosong"/>
+            
+      </LinearLayout>  
+          
+          <ListView 
+           android:textSize="12sp" 
+           android:id="@+id/list" 
+           android:background="@drawable/bgreen" 
+           android:focusable="false" 
+           android:clickable="false" 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content" 
+            />
+                                
+    </LinearLayout>
+</RelativeLayout>

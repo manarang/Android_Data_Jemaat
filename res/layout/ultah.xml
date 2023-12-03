@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:padding="3dp" 
+    android:scrollbars="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+ 
+    <TextView 
+        android:id="@+id/Birthday"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text="@string/list_b"
+        />
+    
+    <ImageView 
+        android:id="@+id/i_back" 
+        android:layout_width="35dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="center_vertical" 
+        android:src="@drawable/back"
+        android:layout_toRightOf="@+id/Birthday"
+	    android:contentDescription="@string/kosong"/>        
+    
+    <ListView 
+        android:textSize="12sp" 
+        android:id="@+id/list" 
+        android:background="@drawable/bgreen" 
+        android:focusable="false" 
+        android:clickable="false" 
+        android:layout_below="@+id/Birthday"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" />
+    
+</RelativeLayout>
