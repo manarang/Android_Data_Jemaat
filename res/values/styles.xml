@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppBaseTheme" />
+    <style name="AppTheme" />
+    <style name="EditText1">@drawable/border</style>
+    <style name="Text1">@drawable/bred</style>
+
+    
+</resources>
